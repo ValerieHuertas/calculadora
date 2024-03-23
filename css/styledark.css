@@ -1,119 +1,117 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Space+Grotesk:wght@300..700&display=swap');
-/* Reset de estilos */
-* {
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Variables de colores y fuentes */
-:root {
+:root{
     --primary-color: #fc9311;
-    --secondary-color: #5e6b7e;
+    --secundary-color: #5e6b7e;
     --font-titles: 70px;
     --font-subtitles: 32px;
-    --primary-tip: "Space Grotesk", sans-serif;
-    --secondary-tip: "Domine", serif;
+    --primary-tip:  font-family: "Space Grotesk", sans-serif; ;
+    --secundary-tip: font-family: "Domine", serif; ;
 }
 
-/* Contenedor general */
-#cont-general {
+#cont-general{
     width: 100%;
     min-height: 100vh;
-    background: var(--secondary-color);
+    background: var(--secundary-color);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Contenedor de la calculadora */
-#cont-calculadora {
-    width: 600px;
-    height: 760px;
+#cont-calculadora{
+    width: 460px;
+    height: 720px;
     border-radius: 20px;
-    background: linear-gradient(145deg, #2b374a, #242e3e);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(145deg, #000000, #000000);
+
 }
 
-/* Contenedor de la pantalla de escritura */
-#cont-escritura {
-    width: calc(100% - 40px); /* Considerando el padding */
+#cont-escritura{
+    width: 100%;
     padding: 20px;
 }
 
-/* Entrada de texto */
-#cont-escritura input {
+#cont-escritura input{
     width: 100%;
     font-size: var(--font-titles);
     background: #fff;
     border: none;
     text-align: right;
     color: #000;
-    padding: 10px;
-    border-radius: 8px;
 }
 
-/* Contenedor de los botones */
-#cont-botones {
-    width: calc(100% - 40px); /* Considerando el padding */
+#cont-botones{
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
     padding: 10px;
     justify-content: space-between;
+    flex-wrap: wrap;
+    
 }
 
-/* Estilo base para los botones */
-.btn {
-    width: calc(22% - 20px); /* Considerando el padding */
+.btn{
+    width: 22%;
     padding: 20px;
     font-size: var(--font-subtitles);
     margin-bottom: 20px;
     border: 0 solid transparent;
-    border-radius: 28px 18px;
+    border-radius: 28px 18px ;
     background: linear-gradient(145deg, #2b374a, #242e3e);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow:  10px 10px 20px #1e2634,
+                 -10px -10px 20px #324056;
     cursor: pointer;
-    transition: transform 0.5s;
-    margin-right: 10px; /* Espacio adicional entre botones */
-    margin-top: 10px; /* Espacio adicional entre botones */
+    transition: .5s;
 }
 
-/* Estilo para botones de tamaño doble */
-.btn.doble {
-    width: calc(48% - 20px); /* Considerando el padding */
+.btn:hover{
+    transform: scale(0.9);
 }
-
-/* Cambio de color para botones específicos */
-#ac, #borrar, #porcentaje {
+#ac, #borrar, #porcentaje{
     color: #a9adb4;
 }
-
-#uno, #dos, #tres, #cuatro, #cinco, #seis, #siete, #ocho, #nueve, #cero, #punto {
-    color: #fff;
+#uno, #dos, #tres, #cuatro, #cinco, #seis, #siete, #ocho, #nueve, #cero, #punto{
+    color:#fff;
 }
-
-#dividir, #multiplicar, #restar, #sumar, #igual {
+#dividir, #multiplicar, #restar, #sumar, #igual{
     color: var(--primary-color);
 }
+.btn.doble{
+    width: 48%;
+    border: 0 solid transparent;
+    border-radius: 28px 18px ;
+    background: linear-gradient(145deg, #2b374a, #242e3e);
+    box-shadow:  10px 10px 20px #1e2634,
+                 -10px -10px 20px #324056;
+}
 
-/* Estilo para el botón de alternar modo oscuro */
-#noche {
+#noche{
     background: url(../img/icono-luna.png);
     width: 66px;
     height: 67px;
     background-size: contain;
-    border: none;
+    border: 0 transparent;
     position: absolute;
     cursor: pointer;
     right: 20px;
     bottom: 20px;
 }
 
-/* Cambio de icono para modo día */
-#noche.dia {
+#noche.dia{
     background: url(../img/icono-sol.jpg);
+    width: 66px;
+    height: 67px;
+    background-size: contain;
+    border: 0 transparent;
+    position: absolute;
+    cursor: pointer;
+    right: 20px;
+    bottom: 20px;
 }
-
-
 
