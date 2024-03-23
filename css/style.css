@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Anton&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primaryColor: #3d3d3d;
+    --secondaryColor: #f6f6f6;
+    --fontTitles: 70px;
+    --fontSubtitle: 32px; 
+    --primaryTipe: font-family: "Anta", sans-serif;
+    --secondaryTipe: font-family: "Anton", sans-serif;
+}
+
+#cont-general{
+    width: 100%;
+    min-height: 100vh;
+    background: var(--secondaryColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f6f1f1;
+}
+
+#cont-calculadora{
+    width: 500px;
+    height: 620px;
+    border: 1px solid var(--primaryColor);
+    border-radius: 42px;
+}
+
+#cont-escritura{
+    width: 100%;
+    padding: 20px;
+}
+
+#cont-escritura input{
+    width: 100%;
+    font-size: var(--fontTitles);
+    border-radius: 32px;
+    background: linear-gradient(145deg, #ffd0dc, #e6afb9);
+    box-shadow:  24px 24px 62px #b58a92,-24px -24px 62px #fffaff;
+}
+
+#cont-botones{
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.btn{
+    width: 22%;
+    padding: 20px;
+    font-size: var(--primaryTipe);
+    margin-bottom: 20px;
+    border-radius: 42px;
+    background: linear-gradient(145deg, #ffd0dc, #e6afb9);
+    box-shadow:  24px 24px 62px #b58a92,-24px -24px 62px #fffaff;
+    font-weight: 500;
+}
+
+.btn.doble{
+    width: 48%;
+}
+
+.btn:hover{
+    background: #c1d6fd;
+}
+#btninterfaz{
+    width: 5%;
+    height: 5%;
+    position: absolute;
+    top: 5%;
+    left: 15%;
+}
+.form-check-input:checked {
+    background-color: #222222 !important;
+    border-color: #000 !important;
+}
+
+#noche{
+    background: url(../img/icono-luna.png);
+    width: 66px;
+    height: 67px;
+    background-size: contain;
+    border: 0 transparent;
+    position: absolute;
+    cursor: pointer;
+    right: 20px;
+    bottom: 20px;
+}
+#noche.dia{
+    background: url(../img/icono-sol.png);
+    width: 66px;
+    height: 67px;
+    background-size: contain;
+    border: 0 transparent;
+    position: absolute;
+    cursor: pointer;
+    right: 20px;
+    bottom: 20px;
+}
+  
+
+  
+  
+
+

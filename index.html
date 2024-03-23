@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" id="hoja-estilo" class="dia">
+    <title>Calculadora</title>
+</head>
+<body class="night-mode">
+    <section id="cont-general">
+        <div id="cont-calculadora"> 
+            <div id="cont-escritura">
+                <input class="contEscritura" type="text">
+            </div>
+            <div id="cont-botones">
+                <!-- Fila 1 -->
+                <button id="ac" class="btn">AC</button>
+                <button id="borrar" class="btn">B</button>
+                <button id="Porcentaje" class="btn">%</button>
+                <button id="dividir" class="btn">/</button>
+                
+                <!-- Fila 2 -->
+                <button id="siete" class="btn">7</button>
+                <button id="ocho" class="btn">8</button>
+                <button id="nueve" class="btn">9</button>
+                <button id="multiplicacion" class="btn">*</button>
+
+                <!-- Fila 3 -->
+                <button id="cuatro" class="btn">4</button>
+                <button id="cinco" class="btn">5</button>
+                <button id="seis" class="btn">6</button>
+                <button id="restar" class="btn">-</button>
+
+                <!-- Fila 4 -->
+                <button id="uno" class="btn">1</button>
+                <button id="dos" class="btn">2</button>
+                <button id="tres" class="btn">3</button>
+                <button id="suma" class="btn">+</button>
+
+                <!-- Fila 5 -->
+                <button id="cero" class="btn doble">0</button>
+                <button id="punto" class="btn">.</button>
+                <button id="igual" class="btn">=</button>                
+            </div>
+        </div>
+
+        <button id="noche" class="" onclick="cambiar()"></button>
+    </section>
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>

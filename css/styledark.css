@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Space+Grotesk:wght@300..700&display=swap');
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables de colores y fuentes */
+:root {
+    --primary-color: #fc9311;
+    --secondary-color: #5e6b7e;
+    --font-titles: 70px;
+    --font-subtitles: 32px;
+    --primary-tip: "Space Grotesk", sans-serif;
+    --secondary-tip: "Domine", serif;
+}
+
+/* Contenedor general */
+#cont-general {
+    width: 100%;
+    min-height: 100vh;
+    background: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor de la calculadora */
+#cont-calculadora {
+    width: 600px;
+    height: 760px;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #2b374a, #242e3e);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor de la pantalla de escritura */
+#cont-escritura {
+    width: calc(100% - 40px); /* Considerando el padding */
+    padding: 20px;
+}
+
+/* Entrada de texto */
+#cont-escritura input {
+    width: 100%;
+    font-size: var(--font-titles);
+    background: #fff;
+    border: none;
+    text-align: right;
+    color: #000;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Contenedor de los botones */
+#cont-botones {
+    width: calc(100% - 40px); /* Considerando el padding */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+/* Estilo base para los botones */
+.btn {
+    width: calc(22% - 20px); /* Considerando el padding */
+    padding: 20px;
+    font-size: var(--font-subtitles);
+    margin-bottom: 20px;
+    border: 0 solid transparent;
+    border-radius: 28px 18px;
+    background: linear-gradient(145deg, #2b374a, #242e3e);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+    margin-right: 10px; /* Espacio adicional entre botones */
+    margin-top: 10px; /* Espacio adicional entre botones */
+}
+
+/* Estilo para botones de tamaño doble */
+.btn.doble {
+    width: calc(48% - 20px); /* Considerando el padding */
+}
+
+/* Cambio de color para botones específicos */
+#ac, #borrar, #porcentaje {
+    color: #a9adb4;
+}
+
+#uno, #dos, #tres, #cuatro, #cinco, #seis, #siete, #ocho, #nueve, #cero, #punto {
+    color: #fff;
+}
+
+#dividir, #multiplicar, #restar, #sumar, #igual {
+    color: var(--primary-color);
+}
+
+/* Estilo para el botón de alternar modo oscuro */
+#noche {
+    background: url(../img/icono-luna.png);
+    width: 66px;
+    height: 67px;
+    background-size: contain;
+    border: none;
+    position: absolute;
+    cursor: pointer;
+    right: 20px;
+    bottom: 20px;
+}
+
+/* Cambio de icono para modo día */
+#noche.dia {
+    background: url(../img/icono-sol.jpg);
+}
+
+
+
